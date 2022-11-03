@@ -1,1 +1,212 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
 
+
+div{
+	width: 14rem;
+	height: 14rem;
+	display: inline-block;
+}
+
+
+#squareUp{
+	float: left;
+	background-color: #fee4bd;
+	background-size: none;	
+}
+
+#blankUp{
+	background-color: white;
+	border-radius: 100%;
+	animation: 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards running circle;
+
+}
+
+#SalmonUp{
+	float: left;
+	background-color: #ffc3bd;
+    border-radius: 0 0 100% 0;
+    -moz-border-radius: 0 0 100% 0;
+    -webkit-border-radius: 0 0 100% 0;
+    animation-delay: 1.25s;
+    animation: quarter 2s;
+
+}
+
+#blueUp{
+	background-color: #d8ebeb;
+	clear: left;
+	float: left;
+	border-radius: 100% 0 0 0;
+     -moz-border-radius: 100% 0 0 0;
+     -webkit-border-radius: 100% 0 0 0;
+    animation-delay: 1.25s;
+    animation: quarter 2s;
+    
+}
+
+#greenUp{
+	background-color: #c8eca4;
+	float: left;
+
+	border-radius: 100%;
+	animation: 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards running circle;
+}
+
+main{
+	display: inline-block;
+	position: absolute;
+	top: 200px; 
+	background-color: white;
+	margin-left: 2%;
+	border-radius: 25px;
+	box-shadow: rgb(0 0 0 / 20%) 5px 5px 15px, rgb(255 255 255 / 20%) -5px -5px 15px;
+	width: 50%;
+	height: 57vh;
+	text-align: center;
+	animation-delay: 3s;
+	animation: main 5s;
+
+}
+
+section{
+	position: relative;
+	top: 140px;
+	animation-delay: 3s;
+	animation: text 2s;
+}
+
+h1{
+	margin: 0;
+	font-size: 52px;
+	font-family: "Apparel Black";
+	color: rgb(47, 47, 47);
+	font-weight: 700;
+	letter-spacing: 0.7px;
+}
+
+section div {
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 500;
+	color: rgb(99, 99, 99);
+	letter-spacing: 0.1px;
+	width: 100%;
+	height: auto;
+	
+}
+
+nav{
+	position: relative;
+	top: 180px;
+}
+
+nav a {
+	padding: 6px;
+}
+
+
+#SalmonBt{
+	position: relative;
+	top: 296px;
+	float: right;
+	background-color: #ffc3bd;
+	border-radius: 100% 0 0 0;
+     -moz-border-radius: 100% 0 0 0;
+     -webkit-border-radius: 100% 0 0 0;    
+    animation-delay: 1.25s;
+    animation: quarter 2s;
+}
+
+#blueBt{
+	position: relative;
+	top: 296px;
+	background-color: #d8ebeb;
+	float:right;
+	border-radius: 100%;
+	animation: 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards running circle;
+
+}
+
+#squareBt{
+	position: relative;
+	top: 296px;
+	float: right;
+	background-color:#c8eca4;
+	clear: right;
+}
+
+#blankBt{
+	
+	background-color: white;
+	border-radius: 100%;
+	animation: 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards running circle;
+}
+
+#orangeBt{
+	position: relative;
+	top: 296px;
+	float: right;
+	background-color: #fee4bd;
+	border-radius: 0 0 100% 0;
+    -moz-border-radius: 0 0 100% 0;
+    -webkit-border-radius: 0 0 100% 0;
+    
+    animation: quarter 2s;
+}
+
+@keyframes quarter{
+
+	from {
+		transform: rotateY(90deg);
+	}
+
+	to {
+
+		transform: rotate(0);
+	}
+}
+
+@keyframes circle{
+
+	0%{
+		transform: scale(0.25);
+	}
+
+	25%{
+		transform: scale(0.5);
+	}
+	75%{
+		transform: scale(0.25);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+@keyframes main{
+
+	from{
+		opacity: 0%;
+	}
+
+	to{
+		opacity: 100%;
+	}
+}
+
+@keyframes text{
+
+	from{
+		transform: translateY(50px);
+
+	}
+
+	to{
+		transform: translateY(0);
+	}
+}
